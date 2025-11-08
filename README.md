@@ -9,7 +9,7 @@ Carlos A. R. Diniz <sup>1</sup>, Victor E. Lachos<sup>2</sup> and  Victor H. Lac
 
 ## Previous installations
 
-- Running the scripts requires the following R packages:matrixNormal, MixMatrix, mvtnorm, MomTrunc, mnormt, and Matrix related to multivariate statistical distributions
+- Running the scripts requires the following R packages:matrixNormal, MixMatrix, mvtnorm, MomTrunc, mnormt, and Matrix related to multivariate statistical distributions.
 
 ## File description:
 
