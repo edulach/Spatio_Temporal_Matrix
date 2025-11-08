@@ -13,13 +13,21 @@ Carlos A. R. Diniz <sup>1</sup>, Victor E. Lachos<sup>2</sup> and  Victor H. Lac
 
 ## File description:
 
-The project includes the following files and folders:
+- **Main.sim.R**: This script handles data simulation and saves the results in the `output_dir` folder. It relies primarily on functions defined in `Functions_SpatioFile.R`.
 
-- Main.sim.R: This script processes the data simulation and save the results in output_dir. It utilizes one primary function Functions SpatioFile.R.
+- **Functions_SpatioFile.R** (located in the `codes` folder): Contains all necessary functions to run the model, including:
+  - Generation of AR(1) correlation structures,
+  - Implementation of spatial correlation functions,
+  - Simulation of response samples,
+  - Maximum likelihood estimation for complete data.  
+  Modifications can be made depending on the dataset, particularly regarding:
+  - Initial parameter values,
+  - Search ranges for the ρ (rho) and φ (phi) parameters,
+  - Number of iterations,
+  - Number of parameters used in model selection criteria.
 
-- Functions SpatioFile.R: contained in the carpet codes, it has the necessary functions to run the model starting for AR(1) correlation, correlation functions,  response sample generator and the Maximum Likelihood for the completed data. Modifications can be made based on the type of dataset to be used, mostly in initial values of parameters, range for rho and phi parameters, number of iterations and numbers of parameters considered in criteria.
+- **errors_Frobenius.R**: Computes Frobenius norm errors for the estimated coefficient matrix (Beta) and covariance matrix (Sigma) using results stored in the `results_test` folder.
 
--errors_Frobenius.R: It runs the frobenius errors for the Matrix beta and Sigma of the results obtained in the carpet results_test.
+- **Application.R**: Applies the methodology to an agricultural dataset. It loads the dataset and uses spatial coordinates of the locations. Both the data and coordinates can be updated or customized as needed.
 
-- Application.R: it runs the Agriculture dataset. It utilizes one primary load dataset data and changes can be made as well as to the coordinates of the places.
 
