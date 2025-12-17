@@ -28,6 +28,6 @@ Carlos A. R. Diniz <sup>1</sup>, Victor E. Lachos<sup>2</sup> and  Victor H. Lac
 
 - **errors_Frobenius.R**: Computes Frobenius norm errors for the estimated coefficient matrix (Beta) and covariance matrix (Sigma) using results stored in the `results_test` folder.
 
-- **Application.R**: Applies the methodology to an agricultural dataset. It loads the dataset and uses spatial coordinates of the locations. Both the data and coordinates can be updated or customized as needed.
+- **Application.R**: The methodology is applied to a Gross Domestic Product (GDP) dataset disaggregated by economic sector—namely, agriculture, industry, services, and public administration—with population, unemployment rate, and labor force participation rate used as covariates. The dataset is loaded along with the spatial coordinates of the corresponding locations. Both the data and the coordinates can be updated or customized as needed.
 
 
