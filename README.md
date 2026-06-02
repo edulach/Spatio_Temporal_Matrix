@@ -13,7 +13,7 @@ Carlos A. R. Diniz <sup>1</sup>, Victor E. Lachos<sup>2</sup> and  Victor H. Lac
 
 ## File description:
 
-- **Main.sim.R**: This script handles data simulation and saves the results in the `output_dir` folder. It relies primarily on functions defined in `Functions_SpatioFile.R`.
+- **Main.sim.R**: This script handles data simulation and saves the results in the `output_dir` folder. It relies primarily on functions defined in `Functions SpatioFile_b2.R`.
 
 - **Functions SpatioFile_b2.R** (located in the `codes` folder): Contains all necessary functions to run the model, including:
   - Generation of AR(1) correlation structures,
